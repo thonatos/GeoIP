@@ -10,31 +10,26 @@ Geo IP lookup using Maxmind binary databases (aka mmdb or geoip2).
 
 - run server ```npm start```
 
-- lookup
-	- GET ```http://{domain.com}?ip=61.141.145.145``` 
-		
-
-		```
-		{
-		  "ret": "ok",
-		  "ip": "61.141.145.145",
-		  "data": {
-		    "continent": "AS",
-		    "country": "CN",
-		    "location": {
-		      "accuracy_radius": 50,
-		      "latitude": 23.1167,
-		      "longitude": 113.25,
-		      "time_zone": "Asia/Shanghai"
-		    }
-		  }
-		}
-		```
-		
-- update
+- lookup ```http://{domain.com}?ip=61.141.145.145```  GET 			
 	
-	- GET ```http://{domain.com}?ip=61.141.145.145&force_update=11```
-
+	```
+	{
+	  "ret": "ok",
+	  "ip": "61.141.145.145",
+	  "data": {
+	    "continent": "AS",
+	    "country": "CN",
+	    "location": {
+	      "accuracy_radius": 50,
+	      "latitude": 23.1167,
+	      "longitude": 113.25,
+	      "time_zone": "Asia/Shanghai"
+	    }
+	  }
+	}
+	```
+		
+- update ```http://{domain.com}?ip=61.141.145.145&force_update=11``` GET 	
 		
 ## References
 
