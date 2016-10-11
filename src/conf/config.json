@@ -1,0 +1,17 @@
+{
+  "version": "e189dfa6914640a7f9a5bdd8d8936ddca389b89d",
+  "version_tmp": "e189dfa6914640a7f9a5bdd8d8936ddca389b89d",
+  "status": "completed",
+  "geolite": {
+    "db": "./db/",
+    "tmp": "./tmp/",
+    "official": {
+      "city": "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz",
+      "country": "http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz"
+    },
+    "url": {
+      "city": "http://static.insta360.com/assets/geolite2/GeoLite2-City.mmdb.gz",
+      "country": "http://static.insta360.com/assets/geolite2/GeoLite2-Country.mmdb.gz"
+    }
+  }
+}
