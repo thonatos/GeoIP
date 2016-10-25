@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t Geo-IP:$CIRCLE_SHA1 .
+    - docker build --rm=false -t thonatos/GeoIP:$CIRCLE_SHA1 .
 
 test:
   override:
