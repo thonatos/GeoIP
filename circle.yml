@@ -16,7 +16,7 @@ deployment:
   geoip:
     branch: master
     commands:
-      - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD $DOCKER_REGISTRY
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD $DOCKER_REGISTRY
       - docker tag thonatos/geoip:$CIRCLE_SHA1 registry.us-west-1.aliyuncs.com/arashivision/geoip:$CIRCLE_SHA1
       - docker push registry.us-west-1.aliyuncs.com/arashivision/geoip:$CIRCLE_SHA1
       
