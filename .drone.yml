@@ -3,3 +3,4 @@ pipeline:
     image: alpine:latest
     commands:
       - ls -l
+      - ls /etc
