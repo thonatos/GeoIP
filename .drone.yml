@@ -1,0 +1,5 @@
+pipeline:
+  build:
+    image: alpine:latest
+    commands:
+      - ls -l
