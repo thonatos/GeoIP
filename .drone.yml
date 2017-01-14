@@ -1,6 +1,5 @@
 pipeline:
-  build:
-    image: alpine:latest
-    commands:
-      - ls -l
-      - ls /etc
+  docker:
+    image: plugins/docker
+    repo: thonatos/geo-ip
+    tags: latest
